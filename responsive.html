@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 웹 01</title>
+    <link rel="stylesheet" href="./htmlSTEP01/reset.css" />
+    <style>
+      body {
+        height: 200vh;
+      }
+
+      .mopen {
+        display: none;
+      }
+
+      .mainVisual {
+        position: relative;
+        height: 100vh;
+        background: url(./htmlSTEP03/img/img02.jpg) no-repeat center
+          center/cover;
+        display: block;
+      }
+
+      .mainVisual .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        padding: 0 15px;
+      }
+
+      .mainVisual .inner h2 {
+        font-size: 3vw;
+        margin: 0 0 10px 0;
+        color: #fff;
+      }
+      .mainVisual .inner p {
+        font-size: 2vw;
+        margin: 0 0 10px 0;
+        color: #fff;
+      }
+
+      @media (max-width: 800px) {
+        .mopen {
+          display: block;
+          position: fixed;
+          top: 30px;
+          right: 30px;
+        }
+        .mainVisual {
+          display: none;
+          top: 0;
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="mopen">
+      <i class="xi-bars"></i>
+    </button>
+    <section class="mainVisual">
+      <div class="inner">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          numquam inventore officiis.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

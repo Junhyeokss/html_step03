@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/htmlSTEP03/css/main.css" />
+    <link rel="stylesheet" href="/htmlSTEP03/reset/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+      @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+      * {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      em,
+      i,
+      address {
+        font-style: normal;
+      }
+
+      body {
+        line-height: 1;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+
+      .video {
+        position: relative;
+      }
+
+      .video video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      .video p {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        font-size: 200px;
+        font-weight: 900;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video">
+      <video src="/htmlSTEP03/img/video.mp4" autoplay muted loop></video>
+      <p>My MOVIE</p>
+      <div class="sun">
+        <span>sun</span>
+      </div>
+    </div>
+  </body>
+</html>
